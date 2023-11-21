@@ -1,16 +1,20 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Container from "./components/Container/Container";
+import Header from "./components/Header/Header";
+import Space from "./components/Space/Space";
+import MainTable from "./components/mainTable/mainTable";
 
 function App() {
-
-
+  
   return (
     <>
-    <h1>hello app</h1>  
+      <Header />
+      <Space height={30} />
+      <Container>
+        <MainTable />
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
